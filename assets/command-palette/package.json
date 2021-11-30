@@ -1,0 +1,21 @@
+{
+  "name": "command-palette",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --mode=dev",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.44.0",
+    "vue": "^3.2.23"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.10.1",
+    "vite": "^2.6.14"
+  }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<name>plg_system_command</name>
+	<author>Joomla! Project</author>
+	<creationDate>February 2007</creationDate>
+	<copyright>(C) 2007 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description></description>
+	<files>
+		<filename plugin="command">command.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_system_command.ini</language>
+		<language tag="en-GB">language/en-GB/plg_system_command.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/plugins/system/command/fields">
+				<field name="devmode" label="Dev Mode" type="devmode" default="0" class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

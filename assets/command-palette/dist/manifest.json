@@ -1,0 +1,16 @@
+{
+  "main.js": {
+    "file": "js/main.js",
+    "src": "main.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor.js"
+    ],
+    "css": [
+      "css/main.css"
+    ]
+  },
+  "_vendor.js": {
+    "file": "js/vendor.js"
+  }
+}
