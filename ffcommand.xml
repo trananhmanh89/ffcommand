@@ -13,12 +13,12 @@
 		<filename plugin="command">command.php</filename>
 	</files>
 	<languages>
-		<language tag="en-GB">language/en-GB/plg_system_command.ini</language>
-		<language tag="en-GB">language/en-GB/plg_system_command.sys.ini</language>
+		<language tag="en-GB">language/en-GB/plg_system_ffcommand.ini</language>
+		<language tag="en-GB">language/en-GB/plg_system_ffcommand.sys.ini</language>
 	</languages>
 	<config>
 		<fields name="params">
-			<fieldset name="basic" addfieldpath="/plugins/system/command/fields">
+			<fieldset name="basic" addfieldpath="/plugins/system/ffcommand/fields">
 				<field name="devmode" label="Dev Mode" type="devmode" default="0" class="btn-group btn-group-yesno">
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>

@@ -8,8 +8,6 @@ export default defineConfig(({ mode }) => {
         // config
         root: './src',
 
-        base: mode === 'dev' ? '/' : '/plugins/system/command/assets/command-palette/dist/',
-
         build: {
             // output dir for production build
             outDir: path.resolve('./dist'),

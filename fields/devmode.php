@@ -10,7 +10,7 @@ class JFormFieldDevmode extends ListField
     protected function getLayoutData()
     {
         HTMLHelper::_('jquery.framework');
-        HTMLHelper::script('plugins/system/command/assets/devmode.js');
+        HTMLHelper::script('plugins/system/ffcommand/assets/devmode.js');
         return parent::getLayoutData();
     }
 }

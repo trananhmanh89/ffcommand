@@ -6,7 +6,7 @@ use Joomla\CMS\Plugin\CMSPlugin;
 
 defined('_JEXEC') or die;
 
-class PlgSystemCommand extends CMSPlugin
+class PlgSystemFFCommand extends CMSPlugin
 {
     public function onBeforeRender()
     {

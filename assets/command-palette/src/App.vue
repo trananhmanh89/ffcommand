@@ -1,25 +1,28 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloVue from './components/Hello.vue';
-console.log('xx');
-console.log('well');
-console.log('object');
+<script>
+import SearchBox from "./components/SearchBox.vue";
+import ResultBox from "./components/ResultBox.vue";
+
+export default {
+    components: {
+        SearchBox,
+        ResultBox,
+    }
+}
 </script>
 
 <template>
-  <div>
-      <hello-vue></hello-vue>
-  </div>
+    <div class="app-wrapper">
+        <search-box></search-box>
+        <result-box></result-box>
+    </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+.app-wrapper {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 </style>
