@@ -1,11 +1,15 @@
 import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx'
+import mkcert from 'vite-plugin-mkcert';
 import path from 'path';
 
 export default defineConfig(() => {
     return {
-        plugins: [vue()],
-        // config
+        plugins: [
+            vueJsx(),
+            mkcert(),
+        ],
+
         root: './src',
 
         build: {
@@ -18,7 +22,7 @@ export default defineConfig(() => {
 
             // our entry
             rollupOptions: {
-                input: './src/main.js',
+                input: './src/main.jsx',
                 output: {
                     entryFileNames: `js/[name].js`,
                     chunkFileNames: `js/[name].js`,
@@ -30,7 +34,7 @@ export default defineConfig(() => {
             https: true,
             cors: true,
             strictPort: true,
-            port: 3000,
+            port: 8888,
             hmr: {
                 host: 'localhost',
                 protocol: 'wss'

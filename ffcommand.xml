@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="plugin" group="system" method="upgrade">
-	<name>plg_system_command</name>
+	<name>plg_system_ffcommand</name>
 	<author>Joomla! Project</author>
 	<creationDate>February 2007</creationDate>
 	<copyright>(C) 2007 Open Source Matters, Inc.</copyright>
@@ -10,7 +10,7 @@
 	<version>1.0.0</version>
 	<description></description>
 	<files>
-		<filename plugin="command">command.php</filename>
+		<filename plugin="ffcommand">ffcommand.php</filename>
 	</files>
 	<languages>
 		<language tag="en-GB">language/en-GB/plg_system_ffcommand.ini</language>

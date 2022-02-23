@@ -1,7 +1,7 @@
 {
-  "main.js": {
+  "main.jsx": {
     "file": "js/main.js",
-    "src": "main.js",
+    "src": "main.jsx",
     "isEntry": true,
     "imports": [
       "_vendor.js"
