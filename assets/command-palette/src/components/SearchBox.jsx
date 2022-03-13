@@ -1,11 +1,16 @@
-import { defineComponent, ref } from 'vue';
-import { setKeyword } from '../services/action';
-import '../style/SearchBox.scss';
+import {
+    defineComponent,
+} from 'vue';
+import {
+    setIndex,
+    setKeyword,
+} from '../services/action';
 
 export default defineComponent({
     name: 'SearchBox',
 
     setup(props) {
+
         const updateKeyword = event => {
             setKeyword(event.target.value);
         }
@@ -16,6 +21,7 @@ export default defineComponent({
                 event.preventDefault();
 
                 const dir = code === 'ArrowUp' ? 'up' : 'down';
+                setIndex(dir);
             }
         }
 

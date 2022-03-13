@@ -1,5 +1,8 @@
 import { createApp } from 'vue';
 import App from './components/App';
+import {
+    addDevtoolPlugin,
+} from './services/devtool';
 import './style/main.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,5 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     $body.appendChild($app);
 
-    createApp(App).mount('#command-palette-app');
+    const app = createApp(App);
+
+    addDevtoolPlugin(app);
+    app.mount('#command-palette-app');
 })

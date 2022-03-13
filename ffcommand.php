@@ -66,20 +66,37 @@ class PlgSystemFFCommand extends CMSPlugin
             ),
             array(
                 'title' => 'Debug Mode',
-                'endpoint' => '',
+                'endpoint' => 'index.php?...',
                 'action' => 'link',
                 'children' => array(
                     array(
-                        'title' => 'On',
-                        'endpoint' => '',
+                        'title' => 'Yes',
+                        'endpoint' => 'index.php?...',
                         'action' => 'execute',
                     ),
                     array(
-                        'title' => 'Off',
-                        'endpoint' => '',
+                        'title' => 'No',
+                        'endpoint' => 'index.php?...',
                         'action' => 'execute',
                     ),
-                )
+                ),
+            ),
+            array(
+                'title' => 'Site Offline',
+                'endpoint' => 'index.php?...',
+                'action' => 'link',
+                'children' => array(
+                    array(
+                        'title' => 'Yes',
+                        'endpoint' => 'index.php?...',
+                        'action' => 'execute',
+                    ),
+                    array(
+                        'title' => 'No',
+                        'endpoint' => 'index.php?...',
+                        'action' => 'execute',
+                    ),
+                ),
             )
         );
 
